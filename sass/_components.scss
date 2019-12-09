@@ -1,0 +1,117 @@
+.logo {
+    height: 4.25rem;
+    margin-left: 2rem;
+}
+
+.user-nav {
+    align-self: stretch;
+
+    display: flex;
+    align-items: center;
+
+    & > * {
+        padding: 0 2rem;
+        cursor: pointer;
+        height: 100%; 
+        display: flex;
+        align-items: center;
+    }
+
+    & > *:hover {
+        background-color: var(--color-grey-light-2);
+    }
+
+    &__icon-box {
+        position: relative;
+    }
+
+    &__icon {
+        height: 4.25rem;
+        width: 4.25rem;
+    }
+}
+
+.review {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    width: 25rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+    overflow: hidden;
+
+    &__svg {
+        height: 8rem;
+        width: 8rem;
+        margin-bottom: 1.5rem; 
+    }
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        justify-content: center;
+    }
+
+    &__box {
+        margin-right: auto;
+    }
+
+    &__name {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    &__estimate {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: var(--color-primary-greenblue);
+    }
+}
+
+.control {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+    overflow: hidden;
+    width: 21rem;
+    height: 21rem;
+    border-radius: 100%;
+
+    &__user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__svg {
+        height: 8rem;
+        width: 8rem;
+        margin-bottom: 1.5rem; 
+    }
+
+    &__name {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    &__estimate {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: var(--color-primary-greenblue);
+    }
+}
+
+.legal {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+    }
+}

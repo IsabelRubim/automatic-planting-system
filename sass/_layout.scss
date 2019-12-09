@@ -1,0 +1,79 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-1);
+    box-shadow: var(--shadow-dark);
+
+    min-height: 50rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.header {
+    font-size: 1.4rem;
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--line);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
+}
+
+.plantation-view {
+    background-color: #fff;
+
+    flex: 1;
+}
+
+.detail {
+    display: flex;
+    padding: 2rem;
+    background-color: var(--color-grey-light-1);
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 3rem;
+        flex-direction: column;
+    }
+}
+
+.data-reviews {
+    border-right: var(--line);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex-wrap: wrap;
+    max-height: 50rem;
+    flex: 0 0 55%;
+
+    @media only screen and (max-width: $bp-medium) {
+        border-right: none;
+        border-bottom: var(--line);
+        margin-bottom: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        max-height: 100%;
+    }
+}
+
+.user-controls {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

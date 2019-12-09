@@ -1,0 +1,186 @@
+:root {
+  --color-primary-greenblue: #9be3de;
+  --color-secondary-lightblue: #beebe9;
+  --color-accent-pink: #ffe3ed;
+  --color-accent-yellow: #fffdf9;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+  --line: 1px solid var(--color-grey-light-2); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+::selection {
+  background-color: var(--color-accent-pink); }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-image: linear-gradient(to right bottom, var(--color-secondary-lightblue), var(--color-primary-greenblue));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      max-width: 100%;
+      width: 100%; } }
+
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.content {
+  display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      flex-direction: column; } }
+
+.plantation-view {
+  background-color: #fff;
+  flex: 1; }
+
+.detail {
+  display: flex;
+  padding: 2rem;
+  background-color: var(--color-grey-light-1); }
+  @media only screen and (max-width: 56.25em) {
+    .detail {
+      padding: 3rem;
+      flex-direction: column; } }
+
+.data-reviews {
+  border-right: var(--line);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  max-height: 50rem;
+  flex: 0 0 55%; }
+  @media only screen and (max-width: 56.25em) {
+    .data-reviews {
+      border-right: none;
+      border-bottom: var(--line);
+      margin-bottom: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .data-reviews {
+      max-height: 100%; } }
+
+.user-controls {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.logo {
+  height: 4.25rem;
+  margin-left: 2rem; }
+
+.user-nav {
+  align-self: stretch;
+  display: flex;
+  align-items: center; }
+  .user-nav > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+  .user-nav > *:hover {
+    background-color: var(--color-grey-light-2); }
+  .user-nav__icon-box {
+    position: relative; }
+  .user-nav__icon {
+    height: 4.25rem;
+    width: 4.25rem; }
+
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  width: 25rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden; }
+  .review__svg {
+    height: 8rem;
+    width: 8rem;
+    margin-bottom: 1.5rem; }
+  .review__data {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    justify-content: center; }
+  .review__box {
+    margin-right: auto; }
+  .review__name {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem; }
+  .review__estimate {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--color-primary-greenblue); }
+
+.control {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
+  width: 21rem;
+  height: 21rem;
+  border-radius: 100%; }
+  .control__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .control__svg {
+    height: 8rem;
+    width: 8rem;
+    margin-bottom: 1.5rem; }
+  .control__name {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem; }
+  .control__estimate {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--color-primary-greenblue); }
+
+.legal {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 500; }
+  @media only screen and (max-width: 56.25em) {
+    .legal {
+      display: none; } }
